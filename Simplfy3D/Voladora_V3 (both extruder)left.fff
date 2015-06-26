@@ -124,7 +124,7 @@
   <flipZoverride>1</flipZoverride>
   <startingGcode>G21			;Metric values,G90			;Absolut positioning,M82			;set extruder to absolute mode,G28			;home position all axis,G29			;Autolevel secuence,G0 X0 Y0 Z10 F3600		;Go start position,M109 S[extruder1_temperature]  T1	;Set up extruder temperature,G92 E0			;Zero extruder position,G1 F200 E15			;Extrude 25mm of filament,G92 E0			;Zero extruder position,G0 Y20 F3600		;move 20 mm back,G92 X-32			;comand to center on platform,M400			;Finish all moves,</startingGcode>
   <layerChangeGcode></layerChangeGcode>
-  <toolChangeGcode>{IF OLDTOOL=0} M104 T0 S0		;Left extruder heater off,{IF OLDTOOL=0} G91			;Relative positioning,{IF OLDTOOL=0} G1 E-10 F3600		;Retract 10mm of filament,{IF OLDTOOL=0} G0 Z+20		;Down platform 20mm,{IF OLDTOOL=0} G90			;Absolute positioning,{IF OLDTOOL=0} M109 S250  T1		;Heat on right extruder,</toolChangeGcode>
+  <toolChangeGcode>{IF OLDTOOL=0} M400,{IF OLDTOOL=0} T0,{IF OLDTOOL=0} G92 E0,{IF OLDTOOL=0} G1 E-11 F3600,{IF OLDTOOL=0} G92 E0,{IF OLDTOOL=0} M400,{IF OLDTOOL=0} T1,{IF OLDTOOL=0} G92 E0,{IF OLDTOOL=0} G1 E10 F250,{IF OLDTOOL=0} G92 E0,{IF OLDTOOL=0} M400</toolChangeGcode>
   <endingGcode>M400			;Finish all moves,M104 S0			;Extruder heater off,M140 S0			;Heat bed heater off,G91			;Relative positioning,G1 E-10 F300		;Retract 10mm of filament,G1 Z+20 X-20 Y-20 F6000		;Move axis,G90			;Absolut positioning,G0 X0 Y210 F6000		;Go to X Y repose position ,G0 Z195			;Down Z axis,M107			;,M84			;Steppers off,</endingGcode>
   <createX3G>0</createX3G>
   <celebration>0</celebration>
