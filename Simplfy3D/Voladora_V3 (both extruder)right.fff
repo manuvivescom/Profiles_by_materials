@@ -214,7 +214,7 @@
     <skirtOutlines>10</skirtOutlines>
     <skirtOffset>0</skirtOffset>
   </autoConfigureMaterial>
-  <autoConfigureMaterial name="PET-G">
+  <autoConfigureMaterial name="PET-G/XT">
   <globalExtruderTemperature>240</globalExtruderTemperature>
     <globalBedTemperature>70</globalBedTemperature>
     <globalExtrusionMultiplier>1.0</globalExtrusionMultiplier>
