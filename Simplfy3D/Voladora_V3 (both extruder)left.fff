@@ -180,6 +180,18 @@
   <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
   <autoConfigureMaterial name="PLA">
+  <globalExtruderTemperature>200</globalExtruderTemperature>
+    <globalBedTemperature>45</globalBedTemperature>
+    <globalExtrusionMultiplier>1.0</globalExtrusionMultiplier>
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+	  <setpoint layer="2" speed="100"/>
+    </fanSpeed>
+	<filamentDiameter>2.95</filamentDiameter>
+    <skirtExtruder>0</skirtExtruder>
+    <skirtLayers>1</skirtLayers>
+    <skirtOutlines>3</skirtOutlines>
+    <skirtOffset>3</skirtOffset>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="ABS">
     <globalExtruderTemperature>230</globalExtruderTemperature>
@@ -243,45 +255,27 @@
     <skirtOutlines>40</skirtOutlines>
     <skirtOffset>0</skirtOffset>
 	
-  </autoConfigureMaterial>
-  <autoConfigureQuality name="UltraFast">
-    <layerHeight>0.6</layerHeight>
-    <topSolidLayers>3</topSolidLayers>
-    <perimeterOutlines>2</perimeterOutlines>
-    <bottomSolidLayers>2</bottomSolidLayers>
-    <infillPercentage>15</infillPercentage>
-    <supportInfill>25</supportInfill>
-  </autoConfigureQuality>
-  <autoConfigureQuality name="Flying">
-    <layerHeight>0.5</layerHeight>
-    <topSolidLayers>3</topSolidLayers>
-    <perimeterOutlines>2</perimeterOutlines>
-    <bottomSolidLayers>3</bottomSolidLayers>
-    <infillPercentage>15</infillPercentage>
-    <supportInfill>25</supportInfill>
-  </autoConfigureQuality>
-  <autoConfigureQuality name="RapidProtoype">
-    <layerHeight>0.4</layerHeight>
-    <topSolidLayers>3</topSolidLayers>
-    <perimeterOutlines>2</perimeterOutlines>
-    <bottomSolidLayers>3</bottomSolidLayers>
-    <infillPercentage>15</infillPercentage>
-    <supportInfill>25</supportInfill>
-  </autoConfigureQuality>
+  </autoConfigureMaterial>	
   <autoConfigureQuality name="Fast">
     <layerHeight>0.3</layerHeight>
     <topSolidLayers>3</topSolidLayers>
-    <perimeterOutlines>2</perimeterOutlines>
     <bottomSolidLayers>3</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
     <infillPercentage>15</infillPercentage>
     <supportInfill>25</supportInfill>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
+  <layerHeight>0.2</layerHeight>
+    <topSolidLayers>3</topSolidLayers>
+    <bottomSolidLayers>3</bottomSolidLayers>
+    <skirtLayers>1</skirtLayers>
+    <infillPercentage>20</infillPercentage>
+    <supportInfill>40</supportInfill>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
     <layerHeight>0.1</layerHeight>
-    <topSolidLayers>5</topSolidLayers>
-    <bottomSolidLayers>3</bottomSolidLayers>
+    <topSolidLayers>4</topSolidLayers>
+    <bottomSolidLayers>4</bottomSolidLayers>
     <infillPercentage>30</infillPercentage>
     <supportInfill>40</supportInfill>
   </autoConfigureQuality>
