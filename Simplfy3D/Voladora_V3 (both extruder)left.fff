@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<profile name="Voladora v3 (leftt extruder)">
+<profile name="Voladora_V3 (both extruder)left">
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
   <extruder name="Left extruder">
@@ -18,11 +18,27 @@
     <useWipe>0</useWipe>
     <wipeDistance>5</wipeDistance>
   </extruder>
+  <extruder name="Right extruder">
+    <toolheadNumber>0</toolheadNumber>
+    <diameter>0.5</diameter>
+    <autoWidth>0</autoWidth>
+    <width>0.5</width>
+    <extrusionMultiplier>1</extrusionMultiplier>
+    <useRetract>1</useRetract>
+    <retractionDistance>3.8</retractionDistance>
+    <extraRestartDistance>0</extraRestartDistance>
+    <retractionZLift>0</retractionZLift>
+    <retractionSpeed>3600</retractionSpeed>
+    <useCoasting>0</useCoasting>
+    <coastingDistance>0.2</coastingDistance>
+    <useWipe>0</useWipe>
+    <wipeDistance>5</wipeDistance>
+  </extruder>
   <primaryExtruder>0</primaryExtruder>
   <layerHeight>0.2</layerHeight>
   <topSolidLayers>3</topSolidLayers>
   <bottomSolidLayers>3</bottomSolidLayers>
-  <perimeterOutlines>2</perimeterOutlines>
+  <perimeterOutlines>3</perimeterOutlines>
   <printPerimetersInsideOut>1</printPerimetersInsideOut>
   <startPointOption>1</startPointOption>
   <startPointOriginX>0</startPointOriginX>
@@ -47,7 +63,7 @@
   <skirtOffset>3</skirtOffset>
   <infillExtruder>0</infillExtruder>
   <externalInfillPattern>Rectilinear</externalInfillPattern>
-  <infillPercentage>20</infillPercentage>
+  <infillPercentage>15</infillPercentage>
   <outlineOverlapPercentage>25</outlineOverlapPercentage>
   <infillExtrusionWidthPercentage>110</infillExtrusionWidthPercentage>
   <minInfillLength>2</minInfillLength>
@@ -66,7 +82,7 @@
   <supportLowerSeparationLayers>1</supportLowerSeparationLayers>
   <supportGridSpacing>4</supportGridSpacing>
   <maxOverhangAngle>45</maxOverhangAngle>
-  <supportAngles>0</supportAngles>  
+  <supportAngles>0</supportAngles>
   <temperatureController name="Left extruder">
     <temperatureNumber>1</temperatureNumber>
     <isHeatedBed>0</isHeatedBed>
@@ -122,7 +138,7 @@
   <flipXoverride>1</flipXoverride>
   <flipYoverride>-1</flipYoverride>
   <flipZoverride>1</flipZoverride>
-  <startingGcode>G21			;Metric values,G90			;Absolut positioning,M82			;set extruder to absolute mode,G28			;home position all axis,G29			;Autolevel secuence,G0 X0 Y0 Z10 F3600		;Go start position,M109 S[extruder1_temperature]  T1	;Set up extruder temperature,G92 E0			;Zero extruder position,G1 F200 E15			;Extrude 25mm of filament,G92 E0			;Zero extruder position,G0 Y20 F3600		;move 20 mm back,G92 X-32			;comand to center on platform,M400			;Finish all moves,</startingGcode>
+  <startingGcode>G21			;Metric values,G90			;Absolut positioning,M82			;set extruder to absolute mode,G28			;home position all axis,G29			;Autolevel secuence,G0 X0 Y0 Z10 F3600		;Go start position,M109 S[extruder1_temperature]  T1	;Set up extruder temperature,G92 E0			;Zero extruder position,G1 F200 E15			;Extrude 25mm of filament,G92 E0			;Zero extruder position,M400			;finish all moves,G0 Y20 F3600		;move 20 mm back,G92 X-32			;comand to center on platform,M400			;Finish all moves,</startingGcode>
   <layerChangeGcode></layerChangeGcode>
   <toolChangeGcode>{IF OLDTOOL=0} M400,{IF OLDTOOL=0} T0,{IF OLDTOOL=0} G92 E0,{IF OLDTOOL=0} G1 E-11 F3600,{IF OLDTOOL=0} G92 E0,{IF OLDTOOL=0} M400,{IF OLDTOOL=0} T1,{IF OLDTOOL=0} G92 E0,{IF OLDTOOL=0} G1 E10 F250,{IF OLDTOOL=0} G92 E0,{IF OLDTOOL=0} M400</toolChangeGcode>
   <endingGcode>M400			;Finish all moves,M104 S0			;Extruder heater off,M140 S0			;Heat bed heater off,G91			;Relative positioning,G1 E-10 F300		;Retract 10mm of filament,G1 Z+20 X-20 Y-20 F6000		;Move axis,G90			;Absolut positioning,G0 X0 Y210 F6000		;Go to X Y repose position ,G0 Z195			;Down Z axis,M107			;,M84			;Steppers off,</endingGcode>
@@ -164,18 +180,6 @@
   <thinWallAllowedOverlapPercentage>10</thinWallAllowedOverlapPercentage>
   <horizontalSizeCompensation>0</horizontalSizeCompensation>
   <autoConfigureMaterial name="PLA">
-  <globalExtruderTemperature>200</globalExtruderTemperature>
-    <globalBedTemperature>45</globalBedTemperature>
-    <globalExtrusionMultiplier>1.0</globalExtrusionMultiplier>
-    <fanSpeed>
-      <setpoint layer="1" speed="0"/>
-	  <setpoint layer="2" speed="100"/>
-    </fanSpeed>
-	<filamentDiameter>2.95</filamentDiameter>
-    <skirtExtruder>0</skirtExtruder>
-    <skirtLayers>1</skirtLayers>
-    <skirtOutlines>3</skirtOutlines>
-    <skirtOffset>3</skirtOffset>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="ABS">
     <globalExtruderTemperature>230</globalExtruderTemperature>
@@ -273,12 +277,6 @@
     <supportInfill>25</supportInfill>
   </autoConfigureQuality>
   <autoConfigureQuality name="Medium">
-    <layerHeight>0.2</layerHeight>
-    <topSolidLayers>4</topSolidLayers>
-    <perimeterOutlines>3</perimeterOutlines>
-    <bottomSolidLayers>3</bottomSolidLayers>
-    <infillPercentage>15</infillPercentage>
-    <supportInfill>25</supportInfill>
   </autoConfigureQuality>
   <autoConfigureQuality name="High">
     <layerHeight>0.1</layerHeight>
