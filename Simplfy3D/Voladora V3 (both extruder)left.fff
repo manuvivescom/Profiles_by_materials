@@ -7,9 +7,9 @@
   <extruder name="Left extruder">
     <toolheadNumber>1</toolheadNumber>
     <diameter>0.8</diameter>
-    <autoWidth>1</autoWidth>
-    <width>0.96</width>
-    <extrusionMultiplier>0.93</extrusionMultiplier>
+    <autoWidth>0</autoWidth>
+    <width>0.8</width>
+    <extrusionMultiplier>0.99</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>3.8</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
@@ -22,10 +22,10 @@
   </extruder>
   <extruder name="Right extruder">
     <toolheadNumber>0</toolheadNumber>
-    <diameter>0.5</diameter>
+    <diameter>0.4</diameter>
     <autoWidth>1</autoWidth>
-    <width>0.6</width>
-    <extrusionMultiplier>0.93</extrusionMultiplier>
+    <width>0.48</width>
+    <extrusionMultiplier>0.99</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>3.8</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
@@ -48,8 +48,8 @@
   <startPointOriginZ>300</startPointOriginZ>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>110</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>130</firstLayerWidthPercentage>
+  <firstLayerHeightPercentage>100</firstLayerHeightPercentage>
+  <firstLayerWidthPercentage>105</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.8</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
@@ -207,7 +207,7 @@
   <autoConfigureMaterial name="PLA">
     <globalExtruderTemperature>200</globalExtruderTemperature>
     <globalBedTemperature>45</globalBedTemperature>
-    <globalExtrusionMultiplier>0.93</globalExtrusionMultiplier>
+    <globalExtrusionMultiplier>0.99</globalExtrusionMultiplier>
     <fanSpeed>
       <setpoint layer="1" speed="0"/>
       <setpoint layer="2" speed="100"/>
