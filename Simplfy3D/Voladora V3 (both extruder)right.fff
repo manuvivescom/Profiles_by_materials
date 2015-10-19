@@ -223,6 +223,8 @@
     <filamentDiameter>1.75</filamentDiameter>
 	<filamentPricePerKg>40</filamentPricePerKg>
     <filamentDensity>1.24</filamentDensity>
+    <defaultSpeed>1800</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
     <skirtExtruder>0</skirtExtruder>
     <skirtLayers>1</skirtLayers>
     <skirtOutlines>3</skirtOutlines>
@@ -238,6 +240,8 @@
 	<filamentDiameter>1.75</filamentDiameter>
 	<filamentPricePerKg>34</filamentPricePerKg>
     <filamentDensity>1.04</filamentDensity>
+    <defaultSpeed>1800</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
     <skirtExtruder>0</skirtExtruder>
     <skirtLayers>1</skirtLayers>
     <skirtOutlines>10</skirtOutlines>
@@ -254,6 +258,8 @@
 	<filamentDiameter>1.75</filamentDiameter>
 	<filamentPricePerKg>48</filamentPricePerKg>
     <filamentDensity>1.36</filamentDensity>
+    <defaultSpeed>1800</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
     <skirtExtruder>0</skirtExtruder>
     <skirtLayers>1</skirtLayers>
     <skirtOutlines>3</skirtOutlines>
@@ -269,6 +275,8 @@
 	<filamentDiameter>1.75</filamentDiameter>
 	<filamentPricePerKg>59.35</filamentPricePerKg>
     <filamentDensity>1.2</filamentDensity>
+    <defaultSpeed>1800</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
   </autoConfigureMaterial>
   <autoConfigureMaterial name="WOOD">
     <globalExtruderTemperature>230</globalExtruderTemperature>
@@ -297,6 +305,8 @@
 	<filamentDiameter>1.75</filamentDiameter>
 	<filamentPricePerKg>39.86</filamentPricePerKg>
     <filamentDensity>1.13</filamentDensity>
+    <defaultSpeed>1800</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
     <skirtExtruder>0</skirtExtruder>
     <skirtLayers>1</skirtLayers>
     <skirtOutlines>40</skirtOutlines>
