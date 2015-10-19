@@ -215,6 +215,8 @@
     <filamentDiameter>1.75</filamentDiameter>
 	<filamentPricePerKg>40</filamentPricePerKg>
     <filamentDensity>1.24</filamentDensity>
+    <defaultSpeed>1800</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
     <skirtExtruder>0</skirtExtruder>
     <skirtLayers>1</skirtLayers>
     <skirtOutlines>3</skirtOutlines>
@@ -230,6 +232,8 @@
 	<filamentDiameter>1.75</filamentDiameter>
 	<filamentPricePerKg>34</filamentPricePerKg>
     <filamentDensity>1.04</filamentDensity>
+    <defaultSpeed>1800</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
     <skirtExtruder>0</skirtExtruder>
     <skirtLayers>1</skirtLayers>
     <skirtOutlines>10</skirtOutlines>
@@ -246,6 +250,8 @@
 	<filamentDiameter>1.75</filamentDiameter>
 	<filamentPricePerKg>48</filamentPricePerKg>
     <filamentDensity>1.36</filamentDensity>
+    <defaultSpeed>1800</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
     <skirtExtruder>0</skirtExtruder>
     <skirtLayers>1</skirtLayers>
     <skirtOutlines>3</skirtOutlines>
@@ -272,7 +278,7 @@
 	<filamentDiameter>1.75</filamentDiameter>
 	<filamentPricePerKg>45.26</filamentPricePerKg>
     <filamentDensity>3.9</filamentDensity>
-	<defaultSpeed>4800</defaultSpeed>
+    <defaultSpeed>4800</defaultSpeed>
     <outlineUnderspeed>0.9</outlineUnderspeed>
     <skirtExtruder>0</skirtExtruder>
     <skirtLayers>1</skirtLayers>
@@ -289,6 +295,8 @@
 	<filamentDiameter>1.75</filamentDiameter>
 	<filamentPricePerKg>39.86</filamentPricePerKg>
     <filamentDensity>1.13</filamentDensity>
+    <defaultSpeed>1800</defaultSpeed>
+    <outlineUnderspeed>0.75</outlineUnderspeed>
     <skirtExtruder>0</skirtExtruder>
     <skirtLayers>1</skirtLayers>
     <skirtOutlines>40</skirtOutlines>
